@@ -60,7 +60,7 @@
                   <input type="submit" value="supprimer" name="supprimer" class="btn btn-danger">
                   </form>
                 </td>
-                <td><a href="http://localhost/e-commerce/afficheCommandeProduit/<?php echo$c['id']; ?>">details du commande</a></td>
+                <td><a href="http://localhost/electromaroc/afficheCommandeProduit/<?php echo$c['id']; ?>">details du commande</a></td>
               </tr>
             <?php
             endforeach;

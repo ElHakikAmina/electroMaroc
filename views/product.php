@@ -18,9 +18,9 @@ if(isset($_GET['id']))
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Electro MAROC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="http://localhost/e-commerce/views/style/header.css" rel="stylesheet"> 
-    <link href="http://localhost/e-commerce/views/style/footer.css" rel="stylesheet">
-    <link href="http://localhost/e-commerce/views/style/ChakraPetch.css" rel="stylesheet">
+    <link href="http://localhost/electromaroc/views/style/header.css" rel="stylesheet"> 
+    <link href="http://localhost/electromaroc/views/style/footer.css" rel="stylesheet">
+    <link href="http://localhost/electromaroc/views/style/ChakraPetch.css" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap'); </style>
 </head>
   <body>
@@ -28,7 +28,7 @@ if(isset($_GET['id']))
     <?php include('views/pages/header.php'); ?>
         <div class="d-flex flex-row">
             <div class="" style="width:40%;">
-                <img src="http://localhost/e-commerce/views/pages/affiche_img_produit.php?id=<?php echo $_GET['id'];?>" style="width:70%; padding-left:30px; height:330px;">
+                <img src="http://localhost/electromaroc/views/pages/affiche_img_produit.php?id=<?php echo $_GET['id'];?>" style="width:70%; padding-left:30px; height:330px;">
             </div>
             <div class="mx-5" style="width:60%;">
               <br>

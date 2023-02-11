@@ -32,9 +32,9 @@ $totalCommandeNonConfirmee=$commande->totalCommandeNonConfirmee();
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Electro MAROC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link href="http://localhost/e-commerce/views/style/header.css" rel="stylesheet"> 
-    <link href="http://localhost/e-commerce/views/style/footer.css" rel="stylesheet">
-    <link href="http://localhost/e-commerce/views/style/ChakraPetch.css" rel="stylesheet">
+    <link href="http://localhost/electromaroc/views/style/header.css" rel="stylesheet"> 
+    <link href="http://localhost/electromaroc/views/style/footer.css" rel="stylesheet">
+    <link href="http://localhost/electromaroc/views/style/ChakraPetch.css" rel="stylesheet">
     <style> @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,700&display=swap'); </style>
 </head>
   <body>

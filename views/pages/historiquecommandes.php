@@ -31,7 +31,7 @@
         <th scope="row"><?php  if($c['date_envoi']=='0000-00-00') echo 'Pas encors envoyé'; else echo $c['date_envoi']; ?></th>
         <th scope="row"><?php  if($c['date_livraison']=='0000-00-00') echo 'Pas encors livré'; else echo $c['date_livraison']; ?></th>
         <th scope="row"><?php  echo $c['quantite']; ?></th>
-        <th><a href="http://localhost/e-commerce/historiquecommandes/<?php  echo $c['id']; ?>"><input type="submit" value="Supprimer" class="btn btn-danger"></a></th>
+        <th><a href="http://localhost/electromaroc/historiquecommandes/<?php  echo $c['id']; ?>"><input type="submit" value="Supprimer" class="btn btn-danger"></a></th>
     </tr>
     <?php  endforeach; ?>
   </tbody>

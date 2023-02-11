@@ -24,10 +24,10 @@
       <th scope="col"><?php echo $c['id']; ?></th>
       <th scope="col"><?php echo $c['nom']; ?></th>
       <!-- <th scope="col"><?php echo $c['description']; ?></th> -->
-      <th scope="col"><img src="http://localhost/e-commerce/views/pages/affiche_img_category.php?id=<?php echo $c['id'];?>" style="width:100px; height:80px;"></th>
-      <th scope="col"><img src="http://localhost/e-commerce/views/pages/affiche_icon_category.php?id=<?php echo $c['id'];?>" style="width:30px; height:30px;"></th>
-      <th scope="col"><a href="http://localhost/e-commerce/modifyCategory/<?php echo $c['id'];?>"><input type="submit" value="Modifier" class="btn btn-warning"></a></th>
-      <th scope="col"><a href="http://localhost/e-commerce/affichecategory/<?php echo $c['id'];?>"><input type="submit" value="Masquer" class="btn btn-danger"></a></th>
+      <th scope="col"><img src="http://localhost/electromaroc/views/pages/affiche_img_category.php?id=<?php echo $c['id'];?>" style="width:100px; height:80px;"></th>
+      <th scope="col"><img src="http://localhost/electromaroc/views/pages/affiche_icon_category.php?id=<?php echo $c['id'];?>" style="width:30px; height:30px;"></th>
+      <th scope="col"><a href="http://localhost/electromaroc/modifyCategory/<?php echo $c['id'];?>"><input type="submit" value="Modifier" class="btn btn-warning"></a></th>
+      <th scope="col"><a href="http://localhost/electromaroc/affichecategory/<?php echo $c['id'];?>"><input type="submit" value="Masquer" class="btn btn-danger"></a></th>
     </tr>
    <?php endforeach; ?>
   </tbody>

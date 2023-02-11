@@ -8,8 +8,8 @@ function autoload ($class_name)
     );
 
   // die($class_name);
-    $parts=explode('\\',$class_name);
-    $name=array_pop($parts);
+    // $parts=explode('\\',$class_name);
+    // $name=array_pop($parts);
     foreach($array_path as $path)
     {
         $file = sprintf($path.'%s.php',$class_name);

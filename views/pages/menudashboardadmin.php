@@ -3,13 +3,13 @@
         <div class="row  justify-content-center ChakraPetch text-muted"> -->
             <div class="card mx-3 my-3   border-0 shadow" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="http://localhost/e-commerce/dashboard" class="text-decoration-none text-muted">Dashboard</a></h5>
+                    <h5 class="card-title"><a href="http://localhost/electromaroc/dashboard" class="text-decoration-none text-muted">Dashboard</a></h5>
                 </div>
             </div>
 
             <div class="card mx-3 my-3  border-0 shadow" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="http://localhost/e-commerce/afficheproduitadmin" class="text-decoration-none text-muted">Les Produits (<?php echo $totalProduct; ?>)</a></h5>
+                    <h5 class="card-title"><a href="http://localhost/electromaroc/afficheproduitadmin" class="text-decoration-none text-muted">Les Produits (<?php echo $totalProduct; ?>)</a></h5>
                 </div>
             </div>
 
@@ -51,13 +51,13 @@
 
             <div class="card mx-3 my-3 border-0 shadow" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="http://localhost/e-commerce/affichecategory" class="text-decoration-none text-muted">Les catégories (<?php echo $totalCategory;?>)  </a></h5>
+                    <h5 class="card-title"><a href="http://localhost/electromaroc/affichecategory" class="text-decoration-none text-muted">Les catégories (<?php echo $totalCategory;?>)  </a></h5>
                 </div>
             </div>
 
             <div class="card mx-3 my-3 border-0 shadow" style="width: 18rem;">
                 <div class="card-body">
-                    <h5 class="card-title"><a href="http://localhost/e-commerce/afficheProduitMasquer" class="text-decoration-none text-muted">Les produits masqués (<?php echo $totalProductMasquer; ?>)</a></h5>
+                    <h5 class="card-title"><a href="http://localhost/electromaroc/afficheProduitMasquer" class="text-decoration-none text-muted">Les produits masqués (<?php echo $totalProductMasquer; ?>)</a></h5>
                 </div>
             </div>
 

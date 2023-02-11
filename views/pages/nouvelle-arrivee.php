@@ -5,7 +5,7 @@
             foreach($products as $product):
         ?>
     <div class="mb-5 mx-4">
-        <a href="http://localhost/e-commerce/product/<?php echo $product['id']; ?>" class="text-decoration-none">
+        <a href="http://localhost/electromaroc/product/<?php echo $product['id']; ?>" class="text-decoration-none">
         <img src="views/pages/affiche_img_produit.php?id=<?php echo $product['id'];?>" style="width:180px; height:220px;" alt=""><br>
         <span class="ChakraPetch text-muted"><?php  echo $product['libelle'];?></span><br>
         <span class="ChakraPetch text-success"><?php  echo $product['prix_final'];?>MAD</span></a>  <br>
@@ -28,7 +28,7 @@
                     </p>
                 </div>
                 <div class="col-lg-6">
-                    <img src="http://localhost/e-commerce/views/img/img1.jpg" alt="" class="img-fluid">
+                    <img src="http://localhost/electromaroc/views/img/img1.jpg" alt="" class="img-fluid">
                 </div>
             </div>
         </div>

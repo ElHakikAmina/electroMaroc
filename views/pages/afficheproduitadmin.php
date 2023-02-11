@@ -36,11 +36,11 @@
       <td><img src="views/pages/affiche_img_produit.php?id=<?php echo $p['id'];?>" style="width:100px; height:100px;" alt=""><br>
       <td>
         <!-- Modify -->
-        <a href="http://localhost/e-commerce/modifyProduct/<?php echo $p['id'];?>"><input type="submit" value="Modifier" class="btn btn-primary mb-2" style="width:95px;"></a>
+        <a href="http://localhost/electromaroc/modifyProduct/<?php echo $p['id'];?>"><input type="submit" value="Modifier" class="btn btn-primary mb-2" style="width:95px;"></a>
         <!-- Masquer -->
-        <a href="http://localhost/e-commerce/masquerProduit/<?php echo $p['id'];?>"><input type="submit" value="Masquer" class="btn btn-warning mb-2" style="width:95px;"></a>
+        <a href="http://localhost/electromaroc/masquerProduit/<?php echo $p['id'];?>"><input type="submit" value="Masquer" class="btn btn-warning mb-2" style="width:95px;"></a>
         <!-- Delete -->
-        <form method="POST" action="http://localhost/e-commerce/afficheproduitadmin/<?php echo $p['id'];?>">
+        <form method="POST" action="http://localhost/electromaroc/afficheproduitadmin/<?php echo $p['id'];?>">
           <input type="submit" value="Supprimer" class="btn btn-danger" style="width:95px;">
         </form>
       </td>

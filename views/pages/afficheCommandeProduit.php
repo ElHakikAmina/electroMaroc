@@ -22,7 +22,7 @@
     <tr>
       <td><?php echo $p["reference"]; ?></td>
       <td><?php echo $p["libelle"]; ?></td>
-      <td><img src="http://localhost/e-commerce/views/pages/affiche_img_produit.php?id=<?php echo $p['id_produit'];?>" style="width:100px; height:100px;" alt=""><br>
+      <td><img src="http://localhost/electromaroc/views/pages/affiche_img_produit.php?id=<?php echo $p['id_produit'];?>" style="width:100px; height:100px;" alt=""><br>
       <td><?php echo $p["code_barre"]; ?></td>
       <td><?php echo $p["prix_achat"]; ?></td>
       <td><?php echo $p["prix_final"]; ?></td>

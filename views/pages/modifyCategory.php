@@ -15,14 +15,14 @@
     <input type="file" name="photo" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Telephone">
   </div>
   <div>
-    <img src="http://localhost/e-commerce/views/pages/affiche_img_category.php?id=<?php echo $_GET['id'];?>" style="width:100px; height:80px;">
+    <img src="http://localhost/electromaroc/views/pages/affiche_img_category.php?id=<?php echo $_GET['id'];?>" style="width:100px; height:80px;">
 </div>
   <div class="form-group" >
     <label for="exampleInputEmail1" class="ChakraPetch">Icone</label>
     <input type="file" name="icone" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Adresse">
   </div>
   <div>
-    <img src="http://localhost/e-commerce/views/pages/affiche_icon_category.php?id=<?php echo $_GET['id'];?>" style="width:30px; height:30px;">
+    <img src="http://localhost/electromaroc/views/pages/affiche_icon_category.php?id=<?php echo $_GET['id'];?>" style="width:30px; height:30px;">
   </div>
   <button type="submit" name="modify" class="btn btn-primary">Modify</button>
 </form>
