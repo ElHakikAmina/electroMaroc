@@ -124,26 +124,29 @@ class ProductController{
     {
         if(isset($_POST['submit']))
         {
-            $photo=file_get_contents($_FILES['photo']['tmp_name']);
-            $data=array(
-                'reference'=>$_POST['reference'],
-                'libelle'=>$_POST['libelle'],
-                'code_barre'=>$_POST['code_barre'],
-                'prix_achat'=>$_POST['prix_achat'],
-                'prix_final'=>$_POST['prix_final'],
-                'prix_offre'=>$_POST['prix_offre'],
-                'description'=>$_POST['description'],
-                'categorie'=>$_POST['categorie'],
-                'photo'=>$photo,
-                'masquer'=>0
-            );
-            $result = Product::add($data);
-            if($result=='ok')
+            if(!empty($_FILES['photo']['tmp_name']))
             {
-                header('location:index');
-            }else
-            {
-                echo $result;
+                $photo=file_get_contents($_FILES['photo']['tmp_name']);
+                $data=array(
+                    'reference'=>$_POST['reference'],
+                    'libelle'=>$_POST['libelle'],
+                    'code_barre'=>$_POST['code_barre'],
+                    'prix_achat'=>$_POST['prix_achat'],
+                    'prix_final'=>$_POST['prix_final'],
+                    'prix_offre'=>$_POST['prix_offre'],
+                    'description'=>$_POST['description'],
+                    'categorie'=>$_POST['categorie'],
+                    'photo'=>$photo,
+                    'masquer'=>0
+                );
+                $result = Product::add($data);
+                if($result=='ok')
+                {
+                    header('location:index');
+                }else
+                {
+                    echo $result;
+                }
             }
         }
     }

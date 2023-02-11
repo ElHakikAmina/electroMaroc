@@ -98,7 +98,7 @@ on produits_composant.id_produit = produit.id
         $stmt = DB::connect()->prepare("SELECT * FROM commande INNER JOIN
          produits_composant ON commande.id = produits_composant.id_commande INNER JOIN 
          produit ON produit.id =  produits_composant.id_produit
-        where id_client=".$_SESSION['id_client']." and acheter='1'");
+        where id_client=".$_SESSION['id_client']." and acheter='1' order by produits_composant.id desc");
         $stmt->execute();
         return $stmt->fetchAll();
         $stmt->close();

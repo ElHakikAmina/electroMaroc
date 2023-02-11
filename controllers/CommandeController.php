@@ -68,7 +68,7 @@ class CommandeController
             $result = Commande::acheterDansPanier($data);
             if($result=='ok')
             {
-                header('location:http://localhost/electromaroc/panier');
+                header('location:http://localhost/electromaroc/historiquecommandes');
             }else
             {
                 echo $result;

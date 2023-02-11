@@ -148,7 +148,7 @@ class Product {
     }
     static public function getAll()
     {
-        $stmt = DB::connect()->prepare("SELECT * FROM produit where masquer != 1 ");
+        $stmt = DB::connect()->prepare("SELECT * FROM produit where masquer != 1 order by id desc");
         $stmt->execute();
         return $stmt->fetchAll();
         $stmt->close();
