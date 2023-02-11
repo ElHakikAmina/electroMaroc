@@ -17,7 +17,7 @@ class ProductController{
                 'id' =>$_GET['id'],
             );
             $result = Product::masquer($data);
-            header("location:http://localhost/e-commerce/afficheproduitadmin");
+            header("location:http://localhost/electromaroc/afficheproduitadmin");
             if($result === 'ok')
             {   
             }else
@@ -34,7 +34,7 @@ class ProductController{
             $result = Product::delete($data);
             if($result === 'ok')
             {
-               header("location:http://localhost/e-commerce/afficheproduitadmin");
+               header("location:http://localhost/electromaroc/afficheproduitadmin");
                 
             } 
         }  
@@ -68,7 +68,7 @@ class ProductController{
                
             );
             $result = Product::update($data);
-            header("location:http://localhost/e-commerce/product/".$_GET['id']);
+            header("location:http://localhost/electromaroc/product/".$_GET['id']);
             if($result === 'ok')
             {
                 
@@ -111,7 +111,7 @@ class ProductController{
             $products=Product::searchProduct($data);
         return $products;
         }else{
-            header('location:http://localhost/e-commerce/index');
+            header('location:http://localhost/electromaroc/index');
         }
         
     }

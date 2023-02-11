@@ -86,7 +86,7 @@ on produits_composant.id_produit = produit.id
         $stmt = DB::connect()->prepare("SELECT * FROM commande INNER JOIN
          produits_composant ON commande.id = produits_composant.id_commande INNER JOIN 
          produit ON produit.id =  produits_composant.id_produit
-        where id_client=".$_SESSION['id_client']." and acheter='0'");
+        where id_client=".$_SESSION['id_client']." and acheter='0' order by produits_composant.id desc");
         $stmt->execute();
         return $stmt->fetchAll();
         $stmt->close();
@@ -206,6 +206,7 @@ on produits_composant.id_produit = produit.id
             $stmt->execute();
             $s=$stmt->fetch();
             $id_commande=$s['id'];
+            
         }
         elseif($countCommandeNotPurchased==1 && $data['acheter']==0)
         {
@@ -236,7 +237,8 @@ on produits_composant.id_produit = produit.id
         $stmt2->bindParam(':quantite',$data['quantite']);
         $stmt2->bindParam(':id_produit',$data['id_produit']);
         $stmt2->bindParam(':id_commande',$id_commande);
-        $stmt2->execute();   
+        $stmt2->execute();  
+        return 'ok'; 
     }
 }
 ?>

@@ -56,7 +56,7 @@ class CategoryController{
            $result=Category::update($data);
            if($result == 'ok')
            {
-                header('location:http://localhost/e-commerce/index');
+                header('location:http://localhost/electromaroc/index');
            }else
            {
                 echo $result;

@@ -22,7 +22,7 @@ class CommandeController
             $result = Commande::changerEtat($data);
             if($result === 'ok')
             {
-               header("location:http://localhost/e-commerce/dashboard");
+               header("location:http://localhost/electromaroc/dashboard");
                 
             } 
         }elseif (isset($_POST['livrerMtn']))
@@ -35,7 +35,7 @@ class CommandeController
             $result = Commande::changerEtat($data);
             if($result === 'ok')
             {
-               header("location:http://localhost/e-commerce/dashboard");
+               header("location:http://localhost/electromaroc/dashboard");
                 
             } 
         }
@@ -48,7 +48,7 @@ class CommandeController
             $result = Commande::deleteCommande($data);
             if($result === 'ok')
             {
-               header("location:http://localhost/e-commerce/dashboard");
+               header("location:http://localhost/electromaroc/dashboard");
                 
             } 
         } 
@@ -68,7 +68,7 @@ class CommandeController
             $result = Commande::acheterDansPanier($data);
             if($result=='ok')
             {
-                header('location:http://localhost/e-commerce/panier');
+                header('location:http://localhost/electromaroc/panier');
             }else
             {
                 echo $result;
@@ -82,7 +82,7 @@ class CommandeController
             $result = Commande::deleteProductCommande($data);
             if($result === 'ok')
             {
-               header("location:http://localhost/e-commerce/historiquecommandes");
+               header("location:http://localhost/electromaroc/historiquecommandes");
                 
             } 
         }  
@@ -117,7 +117,7 @@ class CommandeController
             $result = Commande::order($data);
             if($result=='ok')
             {
-                //header('location:index');
+                header('location:http://localhost/electromaroc/panier');
             }else
             {
                 echo $result;
@@ -138,7 +138,7 @@ class CommandeController
             $result = Commande::order($data);
             if($result=='ok')
             {
-                //header('location:index');
+                header('location:http://localhost/electromaroc/historiquecommandes');
             }else
             {
                 echo $result;
