@@ -38,7 +38,12 @@
             <a href="http://localhost/electromaroc/logout" class="link-primary text-decoration-none ChakraPetch text-dark">Déconnexion</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 <?php
             }
+            if(isset($_SESSION['client']))
+            {
             ?>            
             <a href="http://localhost/electromaroc/panier"><img src="http://localhost/electromaroc/views/img/panier.png" style="width:30px; height:30px;"></a>
+            <?php
+            }
+            ?>
         </div>
 </div>

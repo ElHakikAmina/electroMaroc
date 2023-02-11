@@ -101,7 +101,15 @@ class CommandeController
     public function totalCommande(){ return Commande::totalCommande();}
     public function order()
     {
-        if(isset($_POST['ajouter_au_panier']))
+        if(isset($_POST['acheter']) && $_SESSION['logged']!=true)
+        {
+            header('location:http://localhost/electromaroc/login');
+        }
+        else if(isset($_POST['ajouter_au_panier']) && $_SESSION['logged']!=true)
+        {
+            header('location:http://localhost/electromaroc/login');
+        }
+        else if(isset($_POST['ajouter_au_panier']) )
         {
             $date = date('d-m-y h:i:s');
             $data=array(
@@ -122,7 +130,7 @@ class CommandeController
             {
                 echo $result;
             }
-        }elseif(isset($_POST['acheter']))
+        }elseif(isset($_POST['acheter']) && $_SESSION['logged']==true)
         {
             $date = date('d-m-y h:i:s');
             $data=array(
@@ -144,6 +152,7 @@ class CommandeController
                 echo $result;
             }
         }
+            
     }
 }
 ?>

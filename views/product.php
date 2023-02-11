@@ -39,7 +39,7 @@ if(isset($_GET['id']))
                 <form method="POST">
                   <?php $id_produit=$_GET['id'];?>
                   <input type="hidden" name="id_produit" value="<?php echo $id_produit; ?>" style="width:60px;"/> <br>
-                  <span class="ChakraPetch">Quantité : <input type="number" name="quantite" class="form-control" style="width:60px;"></span> <br>
+                  <span class="ChakraPetch">Quantité : <input type="number" value="1" name="quantite" class="form-control" style="width:60px;"></span> <br>
                   <input type="submit" name="acheter" class="btn btn-success ChakraPetch" value="Achetter" />
                   <input type="submit" name="ajouter_au_panier" class="btn btn-primary ChakraPetch" value="Ajouter au panier" />
                 </form>     
