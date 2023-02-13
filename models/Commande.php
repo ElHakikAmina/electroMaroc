@@ -2,10 +2,11 @@
 class Commande
 {
     static public function afficheCommandeProduit($data){
-        $stmt = DB::connect()->prepare("SELECT *,categorie.nom as categorieNom, produits_composant.id_produit as id_produit
+        $stmt = DB::connect()->prepare("SELECT *,categorie.nom as categorieNom, 
+        produits_composant.id_produit as id_produit
          FROM produits_composant
         INNER JOIN produit
-on produits_composant.id_produit = produit.id
+        on produits_composant.id_produit = produit.id
          and  id_commande=:id_commande 
          INNER JOIN categorie  
     ON categorie.id = produit.categorie");
@@ -15,6 +16,7 @@ on produits_composant.id_produit = produit.id
         $stmt->close();
         $stmt=null;
     }
+    
     static public function changerEtat($data){
         if(isset($data['date_envoi']))
         {

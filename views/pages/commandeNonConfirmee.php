@@ -19,8 +19,9 @@
     <tr>
       <th scope="row"><?php echo $c['id'];?></th>
       <td><?php echo $c['date_creation'];?></td>
-      <td><input type="submit" value="Modifier" class="btn btn-primary"></td>
-      <td><input type="submit" value="Supprimer" class="btn btn-danger"></td>
+      <!-- <td><input type="submit" value="Modifier" class="btn btn-primary"></td>
+      <td><input type="submit" value="Supprimer" class="btn btn-danger"></td> -->
+      <td><a href="http://localhost/electromaroc/afficheCommandeProduit/<?php echo$c['id']; ?>">details du commande</a></td>
     </tr>
     <?php  endforeach; ?>
   </tbody>
