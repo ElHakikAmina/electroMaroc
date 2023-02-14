@@ -1,6 +1,8 @@
 <?php
 $product = new CategoryController();
 $products =$product->getProductsInCategory();
+$pagination= new ProductController();
+
 ?>
 <!doctype html>
 <html lang="en">

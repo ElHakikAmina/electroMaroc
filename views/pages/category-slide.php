@@ -7,7 +7,7 @@
             foreach($categories as $category):
         ?>
         <li class="list-group-item">
-            <a href="category/<?php  echo $category['id'];?>" class="text-dark text-decoration-none">
+            <a href="category/<?php  echo $category['id'];?>/1" class="text-dark text-decoration-none">
             <img src="views/pages/affiche_icon_category.php?id=<?php echo $category['id'];?>" style="width:30px; height:30px;">
              <?php  echo $category['nom'];?>
             </a>

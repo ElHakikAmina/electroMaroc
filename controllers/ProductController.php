@@ -1,5 +1,25 @@
 <?php
 class ProductController{
+    public function NombreDePagesPagination()
+    {
+        if(isset($_GET['id']))
+        {
+            $data=array('id'=>$_GET['id']);
+            $nombreDePages=Product::NombreDePagesPagination($data);
+            
+            for($i=0;$i<$nombreDePages;$i++)
+            {
+                echo "<li class='page-item'>";
+                $NumP=$i+1;
+                echo "<a class='page-link' href='http://localhost/electromaroc/category/5/$NumP'>";
+                echo $i+1;
+                echo "</a>";
+                echo "</li>";
+                
+            }
+            
+        }
+    }
 
     public function afficheProduitMasquer()
     {

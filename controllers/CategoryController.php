@@ -9,8 +9,7 @@ class CategoryController{
             );
             $category=Category::masquerCategory($data);
             return $category;
-        }
-        
+        } 
     }
 
     public function getOneCategory()
@@ -28,9 +27,14 @@ class CategoryController{
     public function totalCategory(){return Category::totalCategory(); }
     public function getProductsInCategory()
     {
-        if(isset($_GET['id']))
+        
+        if(isset($_GET['id']) and isset($_GET['p']))
         {
-            $data=array('id'=>$_GET['id']);
+            $debut=($_GET['p']-1)*4;
+            $data=array('id'=>$_GET['id'],
+            'debut'=>$debut,
+            'p'=>$_GET['p']
+        );
             return $categories=Category::getProductsInCategory($data);
         }
         

@@ -1,6 +1,17 @@
 <?php
 class Product {
 
+    static public function NombreDePagesPagination($data)
+    {
+        $stmt = DB::connect()->prepare(' SELECT *
+        FROM categorie INNER JOIN produit
+        ON categorie.id = produit.categorie where categorie.id='.$data['id'].'');
+       // $stmt =DB::connect()->prepare($query);
+        $stmt->execute();
+        $countProduit = $stmt->rowCount();
+        $nombreDePages=ceil($countProduit/4);
+        return $nombreDePages;
+    }
     static public function afficheProduitMasquer()
     {
         try{

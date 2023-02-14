@@ -43,7 +43,7 @@ class Category{
     {
         $stmt = DB::connect()->prepare(' SELECT *
         FROM categorie INNER JOIN produit
-        ON categorie.id = produit.categorie where categorie.id='.$data['id'].'');
+        ON categorie.id = produit.categorie where categorie.id='.$data['id'].' limit '.$data['debut'].',4');
         $stmt->execute();
         return $stmt->fetchAll();
         $stmt->close();

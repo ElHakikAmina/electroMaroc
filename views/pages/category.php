@@ -9,3 +9,12 @@
     </div>
 <?php endforeach; ?> 
 </div>
+<div class="mx-auto">
+    <nav aria-label='Page navigation example'>
+    <ul class="pagination">
+    <?php 
+    $pagination->NombreDePagesPagination();
+    ?>
+    </ul>
+    </nav>
+</div>

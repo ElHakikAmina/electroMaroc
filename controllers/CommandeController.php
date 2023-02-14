@@ -1,6 +1,7 @@
 <?php
 class CommandeController
 {
+   
     public function afficheCommandeProduit(){
      
         if(isset($_GET['id']))

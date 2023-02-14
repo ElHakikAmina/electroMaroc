@@ -11,7 +11,7 @@
       <th scope="col">id</th>
       <th scope="col">date creation</th>
       <th scope="col"></th>
-      <th scope="col">Handle</th>
+      
     </tr>
   </thead>
   <tbody>
