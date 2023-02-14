@@ -6,18 +6,16 @@ class ProductController{
         {
             $data=array('id'=>$_GET['id']);
             $nombreDePages=Product::NombreDePagesPagination($data);
-            
             for($i=0;$i<$nombreDePages;$i++)
             {
                 echo "<li class='page-item'>";
                 $NumP=$i+1;
-                echo "<a class='page-link' href='http://localhost/electromaroc/category/5/$NumP'>";
+                $id_category=$_GET['id'];
+                echo "<a class='page-link' href='http://localhost/electromaroc/category/$id_category/$NumP'>";
                 echo $i+1;
                 echo "</a>";
                 echo "</li>";
-                
             }
-            
         }
     }
 
